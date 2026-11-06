@@ -1,0 +1,10 @@
+services:
+  whatsapp-app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - WhatsAppBusinessCloudApi__AccessToken=ضع_التوكن_هنا
+      - WhatsAppBusinessCloudApi__PhoneNumberId=ضع_PhoneNumberId_هنا
+      - WhatsAppBusinessCloudApi__WhatsAppBusinessAccountId=ضع_WABA_ID_هنا
